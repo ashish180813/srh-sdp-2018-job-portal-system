@@ -2,13 +2,22 @@
 """
 Created on Mon Jun 11 23:17:23 2018
 
-@author: Ashish Chouhan
+@author: Chinmay/Ashish
 """
 import MySQLdb
 import io
 import csv
 from pathlib import Path
 import os
+
+def connection_to_database():
+    connection =  MySQLdb.connect(host ="localhost",
+                                  user ="Ashish",
+                                  passwd ="A123456789",
+                                  db ="final_exam_demo",
+                                  use_unicode = True,
+                                  charset = "utf8")
+    return connection
 
 def write_to_file(filename,data):
     with io.open(filename, "a", encoding="utf-8", newline='') as f:

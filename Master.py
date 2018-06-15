@@ -2,7 +2,7 @@
 """
 Created on Tue May 29 20:30:57 2018
 
-@author: Chinmay
+@author: Chinmay/Ashish
 """
 import threading
 import time
@@ -24,6 +24,8 @@ monster_thread.start()
 stepstone_thread.start()
 monster_thread.join()
 stepstone_thread.join()
+
+subprocess.run(["python","SQLScriptExecution.py"])
 
 end=time.time()
 print(end-start)
