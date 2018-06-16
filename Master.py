@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue May 29 20:30:57 2018
-
 @author: Chinmay/Ashish
 """
 import threading
