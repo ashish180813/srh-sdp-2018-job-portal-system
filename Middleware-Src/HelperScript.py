@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Jun 11 23:17:23 2018
-
 @author: Chinmay/Ashish
 """
 import MySQLdb
@@ -18,6 +17,7 @@ def connection_to_database():
                                   use_unicode = True,
                                   charset = "utf8")
     return connection
+
 
 def write_to_file(filename,data):
     with io.open(filename, "a", encoding="utf-8", newline='') as f:
